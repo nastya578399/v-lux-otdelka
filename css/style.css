@@ -2497,3 +2497,9 @@ a:any-link {
     display: none;
   }
 }
+
+@media (max-width: 1582px) {
+.footer-wrap {
+  display: none;
+}
+}
