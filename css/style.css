@@ -33,8 +33,6 @@ button {
 body,
 body.post,
 body.page {
-  width: 100%;
-	margin: 0;
 	font-family: "Helvetica", sans-serif;
 	font-size: 18px;
 	line-height: 27px;
@@ -43,7 +41,7 @@ body.page {
 	background: #303030;
 }
 
-.container {
+body {
   max-width: 1920px;
   margin: 0 auto;
 }
@@ -1768,14 +1766,14 @@ a:any-link {
 
 .main-title {
   display: inline-block;
-  width: 730px;
+  width: 974px;
   margin-left: 20px;
   font-size: 62px;
   text-align: left;
 }
 
 .main-title-text {
-  font-size: 62px;
+  font-size: 72px;
   line-height: 70px;
 }
 
@@ -2097,6 +2095,19 @@ a:any-link {
 }
 
 @media (max-width: 768px) {
+  .main-title {
+    display: inline-block;
+    width: 703px;
+    margin-left: 20px;
+    font-size: 62px;
+    text-align: left;
+  }
+
+  .main-title-text {
+    font-size: 62px;
+    line-height: 70px;
+  }
+
   .section9-text-mob-two {
     margin-top: 40px;
   }
