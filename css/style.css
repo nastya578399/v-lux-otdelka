@@ -179,6 +179,7 @@ a:any-link {
 }
 
 .main-title-text {
+  display: inline-block;
   text-align: left;
   margin: 0;
   padding: 0;
@@ -186,6 +187,19 @@ a:any-link {
   font-weight: 300;
   font-size: 112px;
   line-height: 120px;
+  text-transform: uppercase;
+}
+
+.main-title-text-mob {
+  display: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 45px;
+  text-transform: uppercase;
 }
 
 .main-child {
@@ -1680,11 +1694,6 @@ a:any-link {
   .main-title {
     width: 974px;
   }
-
-  .main-title-text {
-    font-size: 82px;
-    line-height: 90px;
-  }
 }
 
 @media (max-width: 1850px) {
@@ -1771,12 +1780,6 @@ a:any-link {
   font-size: 62px;
   text-align: left;
 }
-
-.main-title-text {
-  font-size: 72px;
-  line-height: 70px;
-}
-
 }
 
 @media (max-width: 900px) {
@@ -1832,6 +1835,7 @@ a:any-link {
 
   .section3-block-one {
     width: 100%;
+    margin: 0;
   }
 
   .menu-list {
@@ -2031,9 +2035,7 @@ a:any-link {
 }
 
 .main-title-text {
-  font-size: 30px;
-  line-height: 45px;
-  width: 382px;
+  display: none;
 }
 
 .btn-icon {
@@ -2070,13 +2072,6 @@ a:any-link {
 
 
 @media (max-width: 703px) {
-
-  .main-title-text {
-    font-size: 30px;
-    line-height: 45px;
-    width: 382px;
-  }
-
   .main-title {
     margin-top: 150px;
   }
@@ -2104,6 +2099,7 @@ a:any-link {
   }
 
   .main-title-text {
+    max-width: 703px;
     font-size: 62px;
     line-height: 70px;
   }
@@ -2481,3 +2477,23 @@ a:any-link {
   }
   
   }
+
+@media (max-width: 710px) {
+  .main-title-text-mob {
+    display: inline-block;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+
+    max-width: 382px;
+  
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 45px;
+    text-transform: uppercase;
+  }
+
+  .main-title-text {
+    display: none;
+  }
+}
